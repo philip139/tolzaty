@@ -1,0 +1,7 @@
+config.php
+/admin/config.php
+/system/storage/cache
+
+
+image/catalog/
+image/cache/
