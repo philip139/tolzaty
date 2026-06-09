@@ -68,7 +68,9 @@ class ControllerStartupStartup extends Controller {
 		if (isset($this->session->data['language'])) {
 			$code = $this->session->data['language'];
 		}
-				
+		$this->session->data['language'] = 'ar';
+		$this->request->cookie['language'] = 'ar';
+		$code = 'ar';
 		if (isset($this->request->cookie['language']) && !array_key_exists($code, $languages)) {
 			$code = $this->request->cookie['language'];
 		}
